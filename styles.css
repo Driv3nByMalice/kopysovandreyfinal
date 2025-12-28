@@ -105,6 +105,8 @@ nav ul li a:hover {
 
 .about-content img {
   border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .features-grid {
@@ -174,6 +176,7 @@ nav ul li a:hover {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  width: 100%;
 }
 
 #contact-form button {
@@ -259,18 +262,67 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
   .features-grid,
   .services-grid,
   .reviews-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
-  .contacts-content {
+
+  .about-content {
     flex-direction: column;
   }
+
+  .about-content img {
+    max-width: 100%;
+  }
+
+  .contacts-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   #hero h1 {
     font-size: 2rem;
   }
+
   #hero p {
     font-size: 1rem;
   }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .cta-button,
+  #contact-form button,
+  #subscribe-form button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  #subscribe-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #subscribe-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
+
