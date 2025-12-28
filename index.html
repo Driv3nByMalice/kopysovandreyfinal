@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гитарная мастерская</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">О мастерской</a></li>
+        <li><a href="#features">Преимущества</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Запись</a></li>
+        <li><a href="#subscribe">Новости</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="section">
+    <div class="container">
+      <h1>Гитарная мастерская</h1>
+      <p>Профессиональный ремонт и настройка гитар</p>
+      <button class="cta-button" onclick="location.href='#contacts'">Записаться на ремонт</button>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>О мастерской</h2>
+      <div class="about-content">
+        <img src="images/workshop.jpg.jpeg">
+        <p>Мы — команда профессиональных мастеров, специализирующихся на ремонте и настройке гитар. Наш опыт позволяет гарантировать высокое качество и индивидуальный подход к каждому инструменту.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Наши преимущества</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <img src="images/quality.png">
+          <h3>Качество</h3>
+          <p>Используем только лучшие материалы и инструменты.</p>
+        </div>
+        <div class="feature">
+          <img src="images/speed.png">
+          <h3>Скорость</h3>
+          <p>Оперативный ремонт без потери качества.</p>
+        </div>
+        <div class="feature">
+          <img src="images/guarantee.png">
+          <h3>Надежность</h3>
+          <p>Гарантия на все виды работ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h3>Настройка гитары</h3>
+          <p>Профессиональная настройка струн и интонации.</p>
+        </div>
+        <div class="service">
+          <h3>Ремонт грифа</h3>
+          <p>Устранение прогибов и трещин.</p>
+        </div>
+        <div class="service">
+          <h3>Установка звукоснимателей</h3>
+          <p>Монтаж и настройка электроники для электрогитар.</p>
+        </div>
+        <div class="service">
+          <h3>Полная реставрация</h3>
+          <p>Восстановление старых и поврежденных гитар.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2>Отзывы</h2>
+      <div class="reviews-grid">
+        <div class="review">
+          <p>"Отлично настроили мою гитару! Звук стал просто волшебным."</p>
+          <h4>Клюкин Егор</h4>
+        </div>
+        <div class="review">
+          <p>"Ремонт грифа прошел быстро и качественно. Очень доволен!"</p>
+          <h4>Корсунский Максим</h4>
+        </div>
+        <div class="review">
+          <p>"Профессионалы своего дела. Теперь моя старая гитара звучит как новая."</p>
+          <h4>Еловиков Платон</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contacts-content">
+        <form id="contact-form">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <textarea placeholder="Опишите проблему с гитарой" required></textarea>
+          <button type="submit">Отправить заявку</button>
+        </form>
+        <div class="map">
+          <p>Адрес: г. Екатеринбург, ул. Луначарского, 177</p>
+          <p>Телефон: +7 (912) 222-22-22</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="subscribe" class="section">
+    <div class="container">
+      <h2>Подписаться на новости</h2>
+      <form id="subscribe-form">
+        <input type="email" placeholder="Ваш email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Гитарная мастерская. Все права защищены.</p>
+      <div class="social-links">
+        <a href="#">Youtube</a>
+        <a href="#">Telegram</a>
+        <a href="#">VK</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
